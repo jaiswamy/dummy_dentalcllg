@@ -7,7 +7,7 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN a2enmod rewrite
 
 # Copy source code to Apache web root
-COPY ./wordpress/ /var/www/html/
+COPY ./sndentalcollege.org/ /var/www/html/
 
 # Set correct permissions
 RUN chown -R www-data:www-data /var/www/html
